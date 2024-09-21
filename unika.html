@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+            z-index: 1;
+            position: relative;
+        }
+        .balloon {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            border-radius: 20px;
+            background: purple;
+            z-index: 0;
+        }
+        .balloon.black {
+            background: black;
+        }
+        .balloon:after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background: #333;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+        /* Position balloons */
+        .balloon1 { top: 30px; left: 50px; }
+        .balloon2 { top: 100px; left: 200px; }
+        .balloon3 { top: 150px; left: 100px; }
+        .balloon4 { top: 50px; right: 50px; }
+        .balloon5 { top: 200px; right: 100px; }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Birthday!</h1>
+    <p>Wishing you a day filled with love, joy, and all your favorite things!</p>
+    
+    <!-- Add your image here -->
+    <img src="IMG_7547.heic" alt="Birthday Celebration">
+
+    <!-- Balloons -->
+    <div class="balloon"></div>
+    <div class="balloon black"></div>
+    <div class="balloon"></div>
+    <div class="balloon black"></div>
+    <div class="balloon"></div>
+
+    <!-- Add class for balloon positions -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+
+</body>
+</html>
